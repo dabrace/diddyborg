@@ -20,36 +20,12 @@ int main(void) {
 
 	printf("Setup\n");
 
-    // Setup I2C bus ready
-    if (UbInitialise() != I2C_ERROR_OK) {
+	// Setup I2C bus ready
+	if (UbInitialise() != I2C_ERROR_OK) {
 		printf("Fail.\n");
-        return I2C_ERROR_FAILED;
-    }
-
-	int i;
-
-	printf("Get Extensts:\n");
-
-	for (i = 0; i < 4; i++) {
-		printf("  Servo: %d, Startup: %d, Min: %d, Max: %d\n",
-			i,
-			UbGetServoStartup(i),
-			UbGetServoMinimum(i),
-			UbGetServoMaximum(i));
+	return I2C_ERROR_FAILED;
 	}
 
-
-	for (i = 0; i < 4; i++) {
-
-		printf("\n");
-		printf("Servo: %d\n", i);
-
-		setPosition(i, -1);
-		setPosition(i, 0);
-		setPosition(i, 1);
-
-	}
-
-    return 0;
+	return 0;
 }
 
