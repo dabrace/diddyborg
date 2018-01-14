@@ -1,10 +1,10 @@
-CC=gcc -Wall
+CC=g++ -Wall
 
 all: ultraborg.o ultraborg_test
 
-ultraborg.o: ultraborg.h ultraborg.c
-	$(CC) ultraborg.c -c -o ultraborg.o
+ultraborg.o: ultraborg.h ultraborg.cc
+	$(CC) ultraborg.cc -c -o ultraborg.o
 
-ultraborg_test: ultraborg.o ultraborg_test.c
-	$(CC) ultraborg_test.c ultraborg.o -o ultraborg_test
+ultraborg_test: ultraborg.o ultraborg_test.cc
+	$(CC) ultraborg_test.cc ultraborg.o -o ultraborg_test
 
