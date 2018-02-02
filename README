@@ -1,3 +1,6 @@
+diddyborg name: tarten
+		login pi
+		10.0.0.193
 Code for controlling diddyborg.
 
 Will be a maze solving robot. Self driving
