@@ -4,3 +4,12 @@ diddyborg name: tarten
 Code for controlling diddyborg.
 
 Will be a maze solving robot. Self driving
+
+To get examples running:
+
+diddyborg  metalWeb.py  PicoBorgRev.py   README
+metalborg  piborgrev    PicoBorgRev.pyc
+
+sudo ./metalWeb.py
+
+the directory basecode is what is on the diddyborg metal (tarten) /home/pi/diddborg
